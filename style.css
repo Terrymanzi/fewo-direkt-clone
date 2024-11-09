@@ -4,16 +4,30 @@
     font-family: 'Courier New', Courier, monospace;
     outline: none; border: none;
     text-decoration: none;
+    text-transform: capitalize;
+    background-color: #fff;
 }
 
 html{
-    font-size: 64%;
+    font-size: 62.5%;
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
 
 }
 
-header{
+
+section {
+    padding:2rem 9%;
+}
+
+
+
+
+header {
     position: fixed;
+    height: 80px;
+    width: 100%;
     top: o; left: o; right: 0;
     background: #fff;
     padding: 2rem 9%;
@@ -21,16 +35,67 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    box-shadow: 0.5rem 0.1rem rgb(0,0,0,.1);
 }
 
-header.logo{
+header .logo {
     font-size: 3rem;
-    color: #0d0b8b;
+    color: rgb(10, 12, 141);
     font-weight: bolder;
 }
 
-header.nav{
+header .navbar {
     font-size: 2rem;
+    color: #000000;
     padding: 0 1.5rem;
-    color: #000000
+}
+
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../images/190420b2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    font-size: 4rem;
+    color: #fff;
+    position: absolute;
+    justify-content: center;
+}
+
+.searchBox {
+    position: fixed;
+    justify-content: center;
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 20px;
+    background: #e6dada;
+    color: #000000;
+    font-size: 25px;
+}
+
+.searchBox input{
+	width: 150px;
+	margin: 20px 10px 20px 10px;
+	text-align: center;
+
+}
+
+
+
+.cards1 {
+    position: absolute;
+    justify-content: center;
+    display: inline-block;
+    align-items: center;
+    justify-items: auto;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    
 }
